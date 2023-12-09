@@ -18,7 +18,7 @@ Section
 * [D4_levels](https://github.com/Rafael1s/Weyl-Group-Algorithms/tree/main/Extended_Snow_Algorithm/D4_Levels)
 contains the output example for the Weyl group $W(D_4)$. 
 We follow Bourbaki's numbering for vertices and simple roots in root systems and Dynkin diagrams.
-![](ABCD.bmp)
+![](ABCD.png)
 
 Extending Snow's algorithm should simplify the calculation of conjugacy classes in the Weyl group,
 see section  
