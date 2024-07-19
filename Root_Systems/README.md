@@ -17,7 +17,7 @@
    Here, diagram is one from 7 characters: {'A', 'B', 'C', 'D', E', 'F', 'G'}.  The paramter __n__ should be only
    for diagram 'E', n = 6,7,8. This function returns  the Coxeter number, which coincides with the height  of the
    maximal root (increased by 1) for the corresponding root system. This number is used in the file
-   __PositiveRoots.py__ for arranging the loop by the height of roots.  
+   __PositiveRoots.py__ to loop throgh he height of the roots.  
   
   
    
