@@ -7,12 +7,9 @@
   The output list is the list of positive roots ordered in the __regular ordereing__. Acoocrding the
   regular ordereng roots are ordred by height. In the case of the same height they are ordered in the lexicographical
   ordering. For example, for **G2** the output root list is as follows:
-[[1, 0] ,  ## ht = 1
- [0, 1] ,  ## ht = 1
- [1, 1] ,  ## ht = 2
- [1, 2] ,  ## ht = 3
- [1, 3] ,  ## ht = 4
- [2, 3] ,] ## ht = 5
+  
+![](G2_root_list.png)
+
    For **F4** the output root list contains **24** roots.
    For **E6** (resp, **E7**, resp. **E8**) the output root list contains **36** (resp. **63**, resp. **120** roots)
 
