@@ -17,7 +17,15 @@
    Here, diagram is one from 7 characters: {'A', 'B', 'C', 'D', E', 'F', 'G'}.  The paramter __n__ should be only
    for diagram 'E', n = 6,7,8. This function returns  the Coxeter number, which coincides with the height  of the
    maximal root (increased by 1) for the corresponding root system. This number is used in the file
-   __PositiveRoots.py__ to loop throgh he height of the roots.  
+   __PositiveRoots.py__ to loop throgh he height of the roots.
+
+*  File __BilinearForm.py__ contains the matrices of bilinear form for all types of root system. For the exceptional types
+   __E, F, G__  these matrices are specified explicitly, whereas for serias types they are implicitly given, namely they are
+   given by some short functions. These function for series __B, C, D__ just update a few elements of the matrix for the
+   serias __A__.  For example, for series __C__ this function is as follows:
+
+   ![](getCn_function.png)
+    
   
   
    
