@@ -25,7 +25,13 @@
    serias __A__.  For example, for series __C__ this function is as follows:
 
    ![](imgs/getBn_getCn.jpg)
-    
+
+   This file provides function __getBilForm(diagram, n)__ , where parameters __diagram__ nad __n__ are as in the previous 
+   paragraphs. The output of the function __getBilForm__ is the matrix of the bilinear form. For example, the matrices
+   of the bilnear form for cases __B5__ and __C5__ are aa follows: 
+   
+   ![](imgs/matr_B5_C5.jpg)
+   
   
   
    
