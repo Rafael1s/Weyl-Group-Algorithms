@@ -33,7 +33,7 @@
    paragraphs. The output of the function __getBilForm__ is the matrix of the bilinear form. For example, the matrices
    of the bilnear form for cases __B5__ and __C5__ are aa follows: 
    
-   ![](imgs/matr_B5_C5.JPG)
+   ![](imgs/matr_B5_C5.jpg)
 
 ## File MaximalRoot.py 
    Provides the maximal positive root for all cases Root Systems. The main function is
