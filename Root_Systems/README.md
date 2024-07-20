@@ -50,14 +50,10 @@
 
 ### The number of positive roots
 
-    G2    6               An    n(n+1)/2
-    
-    F4   24               Bn    n^2
-    
-    E6   36               Cn    n^2
-    
-    E7   63               Dn    n(n-1)
-    
+    G2    6               An    n(n+1)/2    
+    F4   24               Bn    n^2    
+    E6   36               Cn    n^2    
+    E7   63               Dn    n(n-1)    
     E8  120
      
   
