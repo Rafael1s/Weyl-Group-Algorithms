@@ -45,9 +45,8 @@
   see above.  For series types __A, B, C, D__ the positive roots are obtained by some short functions. To use this class
   you need to call two lines like this:
 
-     __rs = PositiveRoots('D',12)__
-  
-     __list_pos_roots = rs.getRootList()__ 
+      rs = PositiveRoots('D',12)
+      list_pos_roots = rs.getRootList()
      
   
   
