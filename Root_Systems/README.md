@@ -1,4 +1,4 @@
-# Some tools for Root systems  
+#  Root systems associated with Lie algebras
 
 * File __exc_root_list.py__ contains 5 lists of positive roots for exceptional root systems:
   E6, E7, E8, F4, G2.  The function __getExceptRootList(diagram, n)__ returns the corresponding root list
