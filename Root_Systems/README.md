@@ -24,7 +24,7 @@
    given by some short functions. These function for series __B, C, D__ just update a few elements of the matrix for the
    serias __A__.  For example, for series __C__ this function is as follows:
 
-   ![](getBn_getCn.png)
+   ![](getBn_getCn.jpg)
     
   
   
