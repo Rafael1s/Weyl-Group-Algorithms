@@ -41,6 +41,7 @@
   you need to call two lines like this:
 
      __rs = PositiveRoots('D',12)__
+  
      __list_pos_roots = rs.getRootList()__ 
      
   
