@@ -8,7 +8,7 @@
   regular ordereng roots are ordred by height. In the case of the same height they are ordered in the lexicographical
   ordering. For example, for **G2** the output root list is as follows:
   
-![](G2_root_list.png)
+![](imgs/G2_root_list.png)
 
    For **F4** the output root list contains **24** roots.
    For **E6** (resp, **E7**, resp. **E8**) the output root list contains **36** (resp. **63**, resp. **120** roots)
