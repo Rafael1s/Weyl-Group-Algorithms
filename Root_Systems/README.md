@@ -31,7 +31,23 @@
    of the bilnear form for cases __B5__ and __C5__ are aa follows: 
    
    ![](imgs/matr_B5_C5.JPG)
-   
+
+* File MaximalRoot.py provides the maximal positive root for all cases Root Systems. The main function is
+   __getMaxRoot(diagram, n)__.  Parameters __diagram__ nad __n__ are as in the previous paragraphs.
+
+* File __PositiveRoots.py__  contains class  __class PositiveRoots__ which provides the list of positive roots for any class
+  of root system. For exceptional root systems __E, F, G__  lists of positive roots are provided by the file __exc_root_list.py__,
+  see above.  For series types __A, B, C, D__ the positive roots are obtained by some short functions. To use this class
+  you need to call two lines like this:
+
+     __rs = PositiveRoots('D',12)__
+     __list_pos_roots = rs.getRootList()__ 
+     
+  
+  
+     
+
+
   
   
    
