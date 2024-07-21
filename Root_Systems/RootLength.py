@@ -2,7 +2,7 @@
 from BilinearForm import getBilForm
 from PositiveRoots import PositiveRoots as pr
 
-class RootLengths(object):
+class RootLength(object):
     def __init__(self, diagram, n):
        self.n = n 
        self.diagram = diagram 
@@ -37,6 +37,6 @@ class RootLengths(object):
                 print(count,') ', root)  
             count += 1                    
 if __name__ == "__main__":   
-     rlen = RootLengths('C',4)                    
+     rlen = RootLength('C',7)                    
      rlen.printRoots()
-     rlen.printListOfRoots_by_height()
+     #rlen.printListOfRoots_by_height()
