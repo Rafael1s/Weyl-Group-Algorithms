@@ -56,7 +56,10 @@
     E7   63               Dn    n(n-1)    
     E8  120
      
-  
+ ## File RootLength.py 
+   Contains 2 print funcions: (1) __printRoots()__ lists all roots together with lengths, (2) __printListOfRoots_by_height__
+   lists all roots by sections having the samee height.  The function __printRoots()__.  The first function calculates length
+   for every root using the function __scalarProduct(root)__, which in turn uses bilinear forms (see above). 
   
      
 
