@@ -65,10 +65,10 @@
    Contains 2 kinds of lists of positive roots: (1) pure lists __A10.txt__, __B11.txt__, __C12.txt__, __D13.txt__ are  
    obtained by the __class PositiveRoots__; (2) lists of roots together with lengths __B7_len.txt__, __B8_len.txt__, 
    __C7_len.txt__,  __C8_len.txt__, __F4_len.txt__ , __G2_len.txt__. The latter files contain roots with squared lengths
-   of two types: 1 and 2 (except for __G2_len.txt__ which conatins roots with squared lengths 1 and 3).  It easy to check 
-   that __Cn_len.txt__ will contain exactly __n__ roots with length __2__, the remaining positive __n^2 - n__ roots are
-   of length __1__. Simirely, __Cn_len.txt__ will contain exactly __n__ roots with length __1__,  the remaining positive 
-   __n^2 - n__ roots are of length __2__.
+   of two types: 1 and 2 (except for __G2_len.txt__ which conatins roots with squared lengths 1 and 3).  It IS easy to check 
+   that __Cn_len.txt__ will contain exactly __n__ roots of length __2__, the remaining positive __n^2 - n__ roots have
+   length __1__. Similarly, __Cn_len.txt__ will contain exactly __n__ roots of length __1__,  the remaining positive 
+   __n^2 - n__ roots have length __2__.
   
      
 
