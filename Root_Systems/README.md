@@ -25,7 +25,7 @@
    Contains the matrices of bilinear form for all types of root system. For the exceptional types
    __E, F, G__  these matrices are specified explicitly, whereas for serias types they are implicitly given, namely they are
    given by some short functions. These function for series __B, C, D__ just update a few elements of the matrix for the
-   serias __A__.  For example, for series __C__ this function is as follows:
+   serias __A__.  For example, for series __B__ and  __C__ this function is as follows:
 
    ![](imgs/getBn_getCn.jpg)
 
