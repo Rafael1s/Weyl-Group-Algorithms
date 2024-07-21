@@ -39,7 +39,7 @@
    Provides the maximal positive root for all cases Root Systems. The main function is
    __getMaxRoot(diagram, n)__.  Parameters __diagram__ nad __n__ are as in the previous paragraphs.
 
-## File __PositiveRoots.py__  
+## File PositiveRoots.py
   Contains class  __class PositiveRoots__ which provides the list of positive roots for any class
   of root system. For exceptional root systems __E, F, G__  lists of positive roots are provided by the file __exc_root_list.py__,
   see above.  For series types __A, B, C, D__ the positive roots are obtained by some short functions. To use this class
@@ -48,13 +48,18 @@
       rs = PositiveRoots('D',12)
       list_pos_roots = rs.getRootList()
 
-###    The number of positive roots
+#### The number of positive roots
 
     G2    6               An    n(n+1)/2    
     F4   24               Bn    n^2    
     E6   36               Cn    n^2    
     E7   63               Dn    n(n-1)    
     E8  120
+
+## File RootLength.py 
+   Contains 2 print funcions: (1) __printRoots()__ lists all roots together with lengths, (2) __printListOfRoots_by_height__
+   lists all roots by sections having the samee height.  The function __printRoots()__.  The first function calculates length
+   for every root using the function __scalarProduct(root)__, which in turn uses bilinear forms (see above).
      
   
   
