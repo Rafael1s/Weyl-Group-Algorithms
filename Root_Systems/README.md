@@ -40,7 +40,7 @@
    __getMaxRoot(diagram, n)__.  Parameters __diagram__ nad __n__ are as in the previous paragraphs.
 
 ## File __PositiveRoots.py__  
-  Contains class  __class PositiveRoots__ which provides the list of positive roots for any class
+  Contains  __class PositiveRoots__ which provides the list of positive roots for any class
   of root system. For exceptional root systems __E, F, G__  lists of positive roots are provided by the file __exc_root_list.py__,
   see above.  For series types __A, B, C, D__ the positive roots are obtained by some short functions. To use this class
   you need to call two lines like this:
