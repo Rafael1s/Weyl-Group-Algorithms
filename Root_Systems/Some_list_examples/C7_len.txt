@@ -1,3 +1,6 @@
+## Positive roots in the root system C7 with
+## squares of root lengths
+## Number of positive roots = n^2 = 49
 0 )  [1, 0, 0, 0, 0, 0, 0]  ## sq.len:  1.0
 1 )  [0, 1, 0, 0, 0, 0, 0]  ## sq.len:  1.0
 2 )  [0, 0, 1, 0, 0, 0, 0]  ## sq.len:  1.0

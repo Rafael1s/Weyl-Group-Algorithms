@@ -1,3 +1,5 @@
+## Positive roots in the root system C12.
+## Number of positive roots = n^2 = 144.
 0 )  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 1 )  [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 2 )  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]

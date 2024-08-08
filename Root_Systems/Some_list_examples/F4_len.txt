@@ -1,3 +1,6 @@
+## Positive roots in the root system F4 with
+## squares of root lengths.
+## Number of positive roots = 24.
 0 )  [1, 0, 0, 0]  ## sq.len:  2.0
 1 )  [0, 1, 0, 0]  ## sq.len:  2.0
 2 )  [0, 0, 1, 0]  ## sq.len:  1.0
