@@ -1,3 +1,4 @@
+## Developed by Rafael Stekolshchik. July, 2024
 
 import exc_root_lists as erl
 from CoxeterNumber import getCoxeterNumber    
