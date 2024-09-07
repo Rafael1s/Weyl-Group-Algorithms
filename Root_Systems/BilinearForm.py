@@ -1,3 +1,5 @@
+## Developed by Rafael Stekolshchik. July, 2024
+
 import numpy as np
  
 matrBilForm_E6 = \
@@ -118,8 +120,8 @@ if __name__ == "__main__":
     print(' ', 'F =', *matr, sep = '\n')
     matr = getBilForm('B', 5)
     print(' ', 'B5 =', *matr, sep = '\n')
-    matr = getBilForm('C', 6)
-    print(' ', 'C6 =', *matr, sep = '\n')
+    matr = getBilForm('C', 5)
+    print(' ', 'C5 =', *matr, sep = '\n')
     matr = getBilForm('E', 6)
     print(' ', 'E6 =', *matr, sep = '\n')
     matr = getBilForm('E', 7)
