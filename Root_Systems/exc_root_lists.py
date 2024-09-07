@@ -1,3 +1,5 @@
+## Developed by Rafael Stekolshchik. July, 2024
+
 rlist_G2 = \
 [\
 [1, 0] ,
