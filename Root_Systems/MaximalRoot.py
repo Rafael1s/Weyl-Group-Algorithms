@@ -1,3 +1,4 @@
+## Developed by Rafael Stekolshchik. July, 2024
 
 maxRoot_E6 = [1,2,2,3,2,1]
 

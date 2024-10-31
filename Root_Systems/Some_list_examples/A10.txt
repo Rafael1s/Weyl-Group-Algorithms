@@ -1,3 +1,5 @@
+## Positive roots in the root system A10
+## Number of positive roots = n(n+1)/2 = 55
 0 )  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 1 )  [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]
 2 )  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]

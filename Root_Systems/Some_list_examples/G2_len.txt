@@ -1,0 +1,9 @@
+## Positive roots in the root system G2 with
+## squares of root lengths.
+## Number of positive roots = 6.
+0 )  [1, 0]  ## sq.len:  3.0
+1 )  [0, 1]  ## sq.len:  1.0
+2 )  [1, 1]  ## sq.len:  1.0
+3 )  [1, 2]  ## sq.len:  1.0
+4 )  [1, 3]  ## sq.len:  3.0
+5 )  [2, 3]  ## sq.len:  3.0

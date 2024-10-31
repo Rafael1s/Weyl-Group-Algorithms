@@ -1,3 +1,4 @@
+## Developed by Rafael Stekolshchik. July, 2024
 
 import exc_root_lists as erl
 from CoxeterNumber import getCoxeterNumber    
@@ -109,20 +110,12 @@ class PositiveRoots(object):
     def getRootlist(self):
         return self.rlist
 
-    '''   ----------- Print Functions ------------- ''' 
     def printRoots(self):
-        #print(*self.rlist, sep='\n')
         for i in range(len(self.rlist)): 
-            if self.bVal == 1:
-               print(i, ') ', self.rlist[i])
-            else:
-               sc = self.scalarSquare(self.rlist[i])
-               print(i, ') ', self.rlist[i], ' ## sq.len: ', sc)
+            print(i, ') ', self.rlist[i])
                
-          
-            
 if __name__ == "__main__":   
-     rs = PositiveRoots('D',4)
-     #rs.printRoots()
+     rs = PositiveRoots('F',4)
+     rs.printRoots()
      
      

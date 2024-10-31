@@ -1,4 +1,4 @@
-
+## Developed by Rafael Stekolshchik. July, 2024
 
 def getCoxeterNumber(diagram, n):
     if diagram == 'E': 
