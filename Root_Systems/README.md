@@ -71,7 +71,17 @@
    length __1__. Similarly, __Cn_len.txt__ will contain exactly __n__ roots of length __1__,  the remaining positive 
    __n^2 - n__ roots have length __2__.
   
-     
+## File Extrasp.py
+  Contains 2  principal functions:  (1)  __constructDictTheSameSums()__  and  (2) __getNabForExtrasp(i,j)__ .  
+  (1) The function __constructDictTheSameSums()__ constructs the dictionary __dictTheSameSums__. 
+  The key is the index (in __rlist__) of the sum __$\\gamma$__  of roots of extraspecial pair. 
+  The element of dictionary with __key__   is the list __pairsSameSum__
+  containing pairs of indices [i, j] of all special pairs with sum having index __$\\gamma$__ .
+  The first element of __pairsSameSum__ is the pair of indices __[r1, s1]__ corresponding to the extraspecial pair.  
+  (2) The function __getNabForExtrasp__ uses the Chevalley relation  __N($\\alpha$, $\\beta$ ) = ±(p + 1)__, 
+  for assigning structure constants to extraspecial pairs. The ordered list __rlist__ can be obtained using the 
+  __class PositiveRoots__ (see above).
+  
 
 
   
