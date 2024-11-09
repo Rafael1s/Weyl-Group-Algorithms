@@ -71,7 +71,49 @@
    length __1__. Similarly, __Cn_len.txt__ will contain exactly __n__ roots of length __1__,  the remaining positive 
    __n^2 - n__ roots have length __2__.
   
-     
+## File Extrasp.py
+  Contains 2  principal functions:  (1)  __constructDictTheSameSums()__  and  (2) __getNabForExtrasp(i,j)__ .  
+  (1) The function __constructDictTheSameSums()__ constructs the dictionary __dictTheSameSums__.  
+  Let __{r1, s1}__ be indices of an extraspecial pair. The __key__ is the index (in __rlist__) of the root 
+  __$\\gamma$ = rlist(r1) + rlist(s1)__  . The element of dictionary with __key__   is the list __pairsSameSum__
+  containing pairs of indices __[i, j]__ of all special pairs with sum having index __$\\gamma$__ .
+  The first element of __pairsSameSum__ is the pair of indices __[r1, s1]__ corresponding to the extraspecial pair.  
+  (2) The function __getNabForExtrasp__ uses the Chevalley relation  __N($\\alpha$, $\\beta$ ) = ±(p + 1)__, 
+  for assigning structure constants to extraspecial pairs. The ordered list __rlist__ can be obtained using the 
+  __class PositiveRoots__ (see above).
+
+## File StructConst.py   
+  Contains __class StructConst__ . The instance of the class is constructed as follows: 
+  __st_cnst = StructConst('C', 6)__. The first paramter is the type of the root system, the second one is
+  rank of this root system.  The class contains two functions for calculating structure constants:
+  
+  (1)  __st_cnst.getNij(i, j)__ there __i__ and __j__ indices of the positive roots in __rlist__.  
+  If one of roots is negative, (for example, second root) , calll __getNij(i, -j)__, there __j__ is the
+  index of the opposite positive root.
+
+  (2) __st_cnst.getNij(root_a, root_b)__  there __root_a__ and __root_b__  are roots given as the list of coordinates:
+  __root_a = [0, 0, 0, 1, 0, 0]__
+  __root_b = [0, 0, 1, 0, 0, 0]__
+
+  The algorithm for calculating structure constants is described in [arXiv:2409.13552](https://arxiv.org/abs/2409.13552) . 
+
+## Tables of structure constants
+All tables below represent the case of __N($\\alpha$, $\\beta$)__, where $\\alpha$, $\\beta$ both are positive roots.
+
+#### E6 structure constants
+![](imgs/Nab_E6_pos-pos.JPG)
+
+#### E7 structure constants, part I, positive roots 0 - 28
+![](imgs/Nab_E7_pos-pos_0_28.bmp)
+  
+#### E7 structure constants, part II, positive roots 29 - 62
+![](imgs/Nab_E7_pos-pos_29-62.bmp)
+
+#### F4 structure constants
+![](imgs/Nab_F4_pos-pos.JPG)
+
+
+  
 
 
   
