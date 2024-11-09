@@ -100,9 +100,14 @@
 ## Tables of structure constants
 All tables below represent the case of __N($\\alpha$, $\\beta$)__, where $\\alpha$, $\\beta$ both are positive roots.
 
+#### E6 structure constants
 ![](imgs/Nab_E6_pos-pos.JPG)
 
+#### E7 structure constants, part I, positive roots 0 - 28
+![](imgs/Nab_E7_pos-pos_0_28.bmp)
   
+#### E7 structure constants, part II, positive roots 29 - 62
+![](imgs/Nab_E7_pos-pos_29-62.bmp)
   
 
   
