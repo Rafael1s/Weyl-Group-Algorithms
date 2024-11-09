@@ -97,6 +97,11 @@
 
   The algorithm for calculating structure constants is described in [arXiv:2409.13552](https://arxiv.org/abs/2409.13552) . 
 
+## Tables of structure constants
+All tables below represent the case of __N($\\alpha$, $\\beta$)__, where $\\alpha$, $\\beta$ both are positive roots.
+
+![](imgs/Nab_E6_pos-pos.JPG)
+
   
   
 
