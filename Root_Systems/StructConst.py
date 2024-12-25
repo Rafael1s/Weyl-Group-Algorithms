@@ -282,59 +282,56 @@ class StructConst(object):
             
 if __name__ == "__main__":    
     
-    st_cnst = StructConst('C', 6)
+    st_cnst = StructConst('E', 6)
+      
+    ''' We use Bourbaki's numeration of vertcices and simple roots --- '''
     
-    ''' ------------- Interface getNij -------------------- '''
-    ''' getNij, Test 1:  root iindex out of range'''
-    st_cnst.getNij(36, 1)
-    st_cnst.getNij(6, 38)
-    
-    ''' getNij, Test 2:  two positive roots'''
-    Nab = st_cnst.getNij(3, 2)
-    print('getNij: N(r3, r2) = ', Nab)
-
-    ''' getNij, Test 3   positive and negative '''
-    Nab = st_cnst.getNij(7, -1)
-    print('getNij: N(r7, -r1) = ', Nab)
-
-    ''' getNij, Test 4  negative and positive'''    
-    Nab = st_cnst.getNij(-6, 1)
-    print('getNij: N(-r6, r1) = ', Nab)
-
-    ''' getNij, Test 5  two negative roots '''    
-    Nab = st_cnst.getNij(6, 2)
-    print('getNij: N(-r6, -r2) = ', Nab)
-    
-    ''' ------------ Interface getNab ------------------- '''
+    ''' --------------------- Interface getNab ----------------------- ''' 
+        
     ''' getNab , Test 1 first vector is not a root'''
     root_a = [0, 0, 3, -1, 0, 0]
     root_b = [0, 1, 0, 0, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
-    ''' getNab second vector is not a root'''
+    print('getNab: N([0, 0, 3, -1, 0, 0], -[0, 1, 0, 0, 0, 0]) = ', Nab)
+    
+    ''' getNab Test 2 second vector is not a root'''
     root_a = [0, 1, 0, 0, 0, 0]
     root_b = [0, 0, 2, -1, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
+    print('getNab: N([0, 1, 0, 0, 0, 0], [0, 0, 2, -1, 0, 0]) = ', Nab)
 
-    ''' getNab, Test 2 '''
+    ''' getNab, Test 3 '''
     root_a = [0, 0, 0, 1, 0, 0]
     root_b = [0, 0, 1, 0, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
-    print('getNab: N(r3, r2) = ', Nab)
+    print('getNab: N([0, 0, 0, 1, 0, 0], [0, 0, 1, 0, 0, 0]) = ', Nab)
 
-    ''' getNab, Test 3 '''
+    ''' getNab, Test 4 '''
     root_a = [0, 1, 1, 0, 0, 0]
     root_b = [0, -1, 0, 0, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
-    print('getNab: N(r7, -r1) = ', Nab)
+    print('getNab: N([0, 1, 1, 0, 0, 0], [0, -1, 0, 0, 0, 0]) = ', Nab)
 
-    ''' getNab, Test 4 '''
+    ''' getNab, Test 5, root_a is not a root '''
     root_a = [-1, -1, 0, 0, 0, 0]
     root_b = [0, 1, 0, 0, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
-    print('getNab: N(-r6, r1) = ', Nab)
-
-    ''' getNab, Tets 5 '''
-    root_a = [-1, -1, 0, 0, 0, 0]
-    root_b = [0, 0, -1, 0, 0, 0]
+    print('getNab: N([-1, -1, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0]) = ', Nab)
+        
+    ''' getNab, Test 6, pos and neg roots '''
+    root_a = [0, 0, 0, 0, 0, 1]
+    root_b =  [0, -1, -1, -1, 0, 0]
     Nab = st_cnst.getNab(root_a, root_b)
-    print('getNab: N(-r6, -r2) = ', Nab)
+    print('getNij: N([0, 0, 0, 0, 0, 1], [0, -1, -1, -1, 0, 0]) = ', Nab)
+        
+    ''' getNab, Test 7, pos and neg roots '''
+    root_a  =  [0, 1, 1, 1, 0, 0]   
+    root_b  = [-1, 0, 0, 0, 0, 0]
+    Nab = st_cnst.getNab(root_a, root_b)
+    print('getNab: N([0, 1, 1, 1, 0, 0] ,  [-1, 0, 0, 0, 0, 0]) = ', Nab)
+    
+    ''' getNab, Test 8, pos and neg roots '''
+    root_a  =  [1, 0, 0, 0, 0, 0]   
+    root_b  = [0, 0, -1, -1, -1, 0]
+    Nab = st_cnst.getNab(root_a, root_b)
+    print('getNab: N([1, 0, 0, 0, 0, 0] ,  [0, 0, -1, -1, -1, 0]) = ', Nab)
