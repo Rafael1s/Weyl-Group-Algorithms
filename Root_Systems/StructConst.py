@@ -242,55 +242,43 @@ class StructConst(object):
                    ''' Here,  i < j '''
                    self.buildNab_OnePair_aPos_bNeg(i, j) 
                  
-    def getNij(self, i, j):
-        if abs(i) > len(self.rlist) - 1:
-            print('ERROR: Abs.value of ', i, ' > ', len(self.rlist) - 1)
-            return
-        
-        if abs(j) > len(self.rlist) - 1:
-            print('ERROR: Abs.value of ', j, ' > ', len(self.rlist) - 1)
-            return
-        
-        ''' i < 0 and j > 0:  ##  Formulala (2.4) 
-            i < 0 and j < 0:  ##  Formulala (2.1)   '''
-        if i > 0  and j > 0:
-            return self.matr_Nab_pairs[i][j] 
-        elif i > 0 and j < 0:
-            #j1 = abs(j)
-            #print('i, j1: ', i, j1)
-            return self.matr_Nab_aPos_bNeg[i][abs(j)]  
-        elif i < 0 and j > 0: 
-            v = self.matr_Nab_aPos_bNeg[j][abs(i)]           
-            return -v
-        elif i < 0 and j < 0:  
-            v = self.matr_Nab_pairs[abs(j)][abs(i)] 
-            return -v
         
     def getNab(self, root_a, root_b):   
 
+        i, j, sign_i, sign_j = 1,1,1,1
+        
         try:
           if self.isRoot_PosOrNeg(root_a) == 1:
               i = self.rlist.index(root_a) 
+              sign_i = 1
           else:
               oppos_a = [-x for x  in root_a]
-              i = -self.rlist.index(oppos_a)               
+              i = self.rlist.index(oppos_a)               
+              sign_i = -1
         except:  
-          print('ERROR: ', root_a, ' is not a root')
-          return
+          ''' print('ERROR: ', root_a, ' is not a root') '''
+          return 
 
         try:
           if self.isRoot_PosOrNeg(root_b) == 1:
               j = self.rlist.index(root_b)        
+              sign_j = 1
           else:    
               oppos_b = [-x for x  in root_b]
-              j = -self.rlist.index(oppos_b)               
+              j = self.rlist.index(oppos_b)               
+              sign_j = -1
         except:  
-          print('ERROR: ', root_b, ' is not a root')
+          ''' print('ERROR: ', root_b, ' is not a root')'''
           return
         
-        Nab = self.getNij(i, j)
-        return Nab
-                 
+        if sign_i == 1 and sign_j == 1:
+            return self.matr_Nab_pairs[i][j] 
+        elif sign_i == -1 and sign_j == -1:
+            return self.matr_Nab_pairs[j][i] 
+        elif sign_i == 1 and sign_j == -1:
+            return self.matr_Nab_aPos_bNeg[i][j]
+        elif sign_i == -1 and sign_j == 1:
+            return self.matr_Nab_aPos_bNeg[j][i]
             
 if __name__ == "__main__":    
     
